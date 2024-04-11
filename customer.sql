@@ -1,13 +1,13 @@
-CREATE TABLE CRM.Customers (
-	CustomerID varchar(100) auto_increment NOT NULL,
-	FirstName varchar(100) NULL,
-	LastName varchar(100) NULL,
-	Email varchar(100) NULL,
-	Phone varchar(100) NULL,
-	Address varchar(100) NULL,
-	City varchar(100) NULL,
-	State varchar(100) NULL,
-	Zip varchar(100) NULL,
-	Country varchar(100) NULL,
-	CONSTRAINT Customers_PK PRIMARY KEY (CustomerID)
+CREATE TABLE `Customers` (
+  `CustomerID` int NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(50) DEFAULT NULL,
+  `LastName` varchar(50) DEFAULT NULL,
+  `Email` varchar(100) DEFAULT NULL,
+  `Phone` varchar(50) DEFAULT NULL,
+  `Address` varchar(50) DEFAULT NULL,
+  `City` varchar(50) DEFAULT NULL,
+  `State` varchar(50) DEFAULT NULL,
+  `Zip` varchar(20) DEFAULT NULL,
+  `Country` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`CustomerID`)
 )
