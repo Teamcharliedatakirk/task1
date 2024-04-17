@@ -1,0 +1,20 @@
+SELECT * FROM Customer WHERE CustomerID IN (3, 5, 10);
+UPDATE Customer
+SET Address = '1010 Willow St.',
+    City = 'Madison',
+    State = 'WI',
+    Zip = '53703'
+WHERE CustomerID = 3;
+
+UPDATE Customer
+SET Email = 'nancy.newemail@example.com',
+    Phone = '555-0205'
+WHERE CustomerID = 5;
+
+UPDATE Customer
+SET Address = '909 View St.',
+    City = 'Seattle',
+    State = 'WA',
+    Zip = '98101'
+WHERE CustomerID = 10;
+
